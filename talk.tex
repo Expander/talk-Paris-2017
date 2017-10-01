@@ -337,34 +337,38 @@
   \begin{itemize}
   \item code specific
   \item flag specific
+  \item generic (MSSM, NMSSM, THDM, \ldots)
   \item $\MS \lesssim 1\eh{TeV}$: envelope fixed order 3-loop calculation
   \item $\MS \gtrsim 1\eh{TeV}$: envelope EFT 2-loop calculation
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Debatable ways to calculate $\Delta M_h$}
-  fixed 2-loop order:
-  \begin{itemize}
-  \item vary $Q_\text{pole}$
-  \item 1L + 2L-QCD $y_t^{\text{SOFTSUSY/FS}}(M_Z)$ vs.\ $y_t^{\text{SPheno}}(M_Z)$
-  \end{itemize}
-  fixed 3-loop order:
-  \begin{itemize}
-  \item vary $Q_\text{pole}$
-  \item ? 2L-SQCD $y_t^{\text{SOFTSUSY/FS}}(M_Z)$ vs.\ $y_t^{\text{SPheno}}(M_Z)$
-  \item ? $\alpha_s^{1L}$ vs.\ $\alpha_s^{2L}$
-  \end{itemize}
-  pure EFT:
-  \begin{itemize}
-  \item vary $Q_\text{match}$ [SUSY uncertainty]
-  \item vary $Q_\text{pole}$ and $y_t^{2L}(M_Z)$ vs.\ $y_t^{3L}(M_Z)$ [SM uncertainty]
-  \item $\lambda$ vs.\ $(\lambda + v^2/\MS^2)$ [EFT uncertainty]
-  \end{itemize}
-  mixed (FlexibleEFTHiggs):
-  \begin{itemize}
-  \item vary $Q_\text{match}$ [SUSY uncertainty]
-  \item vary $Q_\text{pole}$ and $y_t^{2L}(M_Z)$ vs.\ $y_t^{3L}(M_Z)$ [SM uncertainty]
-  \end{itemize}
+  \begin{center}
+  \begin{tabular}{lllll}
+    \toprule
+    fixed order & 1L & 2L & 3L \\
+    \midrule
+    $Q_\pole$ & $[\MS/2, 2\MS]$ & $[\MS/2, 2\MS]$ & $[\MS/2, 2\MS]$ \\
+    $y_t(M_Z)$ & 0L vs.\ 1L & 1L vs.\ 2L & \textcolor{red}{2L vs.\ 3L} \\
+    $\alpha_s(M_Z)$ & 0L vs.\ 1L & 0L vs.\ 1L & 1L vs.\ 2L \\
+    \midrule
+    EFT/mixed & $\Delta\lambda^{1L}$ & $\Delta\lambda^{2L}$ \\
+    \midrule
+    $Q_\text{match}$ & $[\MS/2, 2\MS]$ & $[\MS/2, 2\MS]$ \\
+    % $Q_\pole$ & $[M_t/2, 2M_t]$ & $[M_t/2, 2M_t]$ \\
+    % $y_t(M_Z)$ & 1L vs.\ 2L & 2L vs.\ 3L \\
+    % $\alpha_s(M_Z)$ & 0L vs.\ 1L & 0L vs.\ 1L \\
+    $\lambda(\MS)$ & $0$ vs.\ $\frac{v^2}{\MS^2}$ & $0$ vs.\ $\frac{v^2}{\MS^2}$ \\
+    \midrule
+    EFT/mixed & $\Delta M_h^{1L}$ & $\Delta M_h^{2L}$ \\
+    \midrule
+    $Q_\pole$ & $[M_t/2, 2M_t]$ & $[M_t/2, 2M_t]$ \\
+    $y_t(M_Z)$ & 1L vs.\ 2L & 2L vs.\ 3L \\
+    $\alpha_s(M_Z)$ & 0L vs.\ 1L & 1L vs.\ 2L \\
+    \bottomrule
+  \end{tabular}
+\end{center}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
