@@ -333,15 +333,24 @@
   $\tan\beta=5$, $X_t=0$, $\MS = 2\eh{TeV}$
 \end{frame}
 
-\begin{frame}{Proposal to calculate $\Delta M_h$}
+\begin{frame}{Requirements for uncertainty estimate}
+  \begin{itemize}
+  \item code specific
+  \item flag specific
+  \item $\MS \lesssim 1\eh{TeV}$: envelope fixed order 3-loop calculation
+  \item $\MS \gtrsim 1\eh{TeV}$: envelope EFT 2-loop calculation
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Debatable ways to calculate $\Delta M_h$}
   fixed 2-loop order:
   \begin{itemize}
-  \item scale variation (estimates $\log^n \frac{Q}{M}$ terms)
+  \item vary $Q_\text{pole}$
   \item 1L + 2L-QCD $y_t^{\text{SOFTSUSY/FS}}(M_Z)$ vs.\ $y_t^{\text{SPheno}}(M_Z)$
   \end{itemize}
   fixed 3-loop order:
   \begin{itemize}
-  \item scale variation (estimates $\log^n \frac{Q}{M}$ terms)
+  \item vary $Q_\text{pole}$
   \item ? 2L-SQCD $y_t^{\text{SOFTSUSY/FS}}(M_Z)$ vs.\ $y_t^{\text{SPheno}}(M_Z)$
   \item ? $\alpha_s^{1L}$ vs.\ $\alpha_s^{2L}$
   \end{itemize}
@@ -351,7 +360,7 @@
   \item vary $Q_\text{pole}$ and $y_t^{2L}(M_Z)$ vs.\ $y_t^{3L}(M_Z)$ [SM uncertainty]
   \item $\lambda$ vs.\ $(\lambda + v^2/\MS^2)$ [EFT uncertainty]
   \end{itemize}
-  FlexibleEFTHiggs:
+  mixed (FlexibleEFTHiggs):
   \begin{itemize}
   \item vary $Q_\text{match}$ [SUSY uncertainty]
   \item vary $Q_\text{pole}$ and $y_t^{2L}(M_Z)$ vs.\ $y_t^{3L}(M_Z)$ [SM uncertainty]
